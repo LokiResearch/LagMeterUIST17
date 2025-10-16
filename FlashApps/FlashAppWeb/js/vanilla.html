@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flashing app using Vanilla JS</title>
+  <script type="text/javascript" src="/main.js"></script>
+  <script type="text/javascript">
+    function changeBackground(color) {
+       document.body.style.background = color;
+    }
+
+    function onDown(){
+      changeBackground(COLORS.DOWN)
+/*      requestAnimationFrame(
+        function(){
+          changeColor(COLORS.DOWN)
+        }
+      );*/
+    }
+
+    function onUp(){
+      changeBackground(COLORS.UP)
+    }
+
+    bind("vanillaJS", onDown, onUp);
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

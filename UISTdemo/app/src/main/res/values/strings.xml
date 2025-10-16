@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Lagmeter Demo</string>
+    <string name="msg_intro">Set your lagmeter and start to tap.</string>
+    <string name="msg_running">Lagmeter is running.</string>
+    <string name="msg_waiting">Waiting for lagmeter&#8230;</string>
+    <string name="ui_latency_ptt">Piezo to touch</string>
+    <string name="ui_latency_ttp">Touch to photo-diode</string>
+    <string name="ui_latency_e2e">End-to-end</string>
+    <string name="ui_gamespeed">Game speed</string>
+    <string name="ui_resettimes">Reset times</string>
+    <string name="ui_time_null">-</string>
+    <string name="ui_time_unit_ms"> ms</string>
+</resources>

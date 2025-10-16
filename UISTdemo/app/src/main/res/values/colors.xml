@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gameBackground">#DEDEFF</color>
+    <color name="gameSquare">#4A497F</color>
+    <color name="gameSquareRed">#7F2017</color>
+    <color name="gameObstacle">#7674CC</color>
+    <color name="gameShadow">#6F6F7F</color>
+</resources>

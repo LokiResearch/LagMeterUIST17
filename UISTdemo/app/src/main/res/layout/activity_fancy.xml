@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="inria.mjolnir.fancyapp.FancyActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/latency"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:text="@string/msg_intro" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="3"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:rowCount="3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/ui_latency_ptt" />
+
+                <TextView
+                    android:id="@+id/latency_e2e"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="@string/ui_time_null" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="@string/ui_time_unit_ms" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/ui_latency_ttp" />
+
+                <TextView
+                    android:id="@+id/latency_p2t"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="@string/ui_time_null"/>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="@string/ui_time_unit_ms" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/ui_latency_e2e"/>
+
+                <TextView
+                    android:id="@+id/latency_sys"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="@string/ui_time_null"/>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="@string/ui_time_unit_ms" />
+
+            </GridLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/photodiode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="" />
+
+    </LinearLayout>
+
+    <inria.mjolnir.fancyapp.MyGame
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ui_gamespeed"
+            android:textAlignment="center" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:progress="10"
+            android:max="100" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ui_resettimes"
+            android:textSize="12sp"
+            android:onClick="resetTimes" />
+    </LinearLayout>
+
+</LinearLayout>

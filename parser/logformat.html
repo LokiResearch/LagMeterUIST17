@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="fr">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+<!--
+body {
+    color: black;
+    background: white;
+    font-family: Verdana, Arial, Helvetica, sans;
+    font-size: 10pt;
+    text-align: justify;
+    margin: 3em;
+    padding: 0;
+}
+h1 {
+  font-size: 13pt;
+}
+code {
+  margin-left: 3em;
+  display: block;
+}
+-->
+    </style>
+    <title>Log format</title>
+  </head>
+
+  <body>
+
+    <h1>General format</h1>
+
+    <p>The general format is the following:</p>
+    <code>timestamp obspoint [args]</code>
+    <p>where <tt>timestamp</tt> is an integer value in nanoseconds, <tt>obspoint</tt> is a word and <tt>args</tt> a whitespace-separated list of arguments that depends on the specified observation point.</p>
+
+    <h1>ButtonPress log</h1>
+
+    <code>timestamp <b>leonardo</b> nbbytes 0 0 <b>80</b> t0 t1 t2 t3 data</code>
+    <code>timestamp <b>libpointing</b> event_timestamp</code>
+    <code>timestamp <b>system</b> x,y event_timestamp</code>
+    <code>timestamp <b>toolkit</b> x,y</code>
+    <code>timestamp <b>repaint</b></code>
+    <code>timestamp <b>screen</b></code>
+    <code>timestamp <b>leonardo</b> nbbytes 0 0 <b>68</b> t0 t1 t2 t3 data</code>    
+
+  </body>
+
+</html>
