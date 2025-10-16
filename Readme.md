@@ -53,3 +53,26 @@ Code for producing Table 7 in the paper.
 
 Android code used for the UIST demo showing the measure of latency while the user is interacting with an application. The lagmeter is connected to the Android device.
 
+## Related publication
+
+[![DOI](https://img.shields.io/badge/doi-10.1145%2F3126594.3126606-blue)](https://doi.org/10.1145/3126594.3126606)
+
+```
+@inproceedings{10.1145/3126594.3126606,
+    author = {Casiez, G\'{e}ry and Pietrzak, Thomas and Marchal, Damien and Poulmane, S\'{e}bastien and Falce, Matthieu and Roussel, Nicolas},
+    title = {Characterizing Latency in Touch and Button-Equipped Interactive Systems},
+    year = {2017},
+    isbn = {9781450349819},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3126594.3126606},
+    doi = {10.1145/3126594.3126606},
+    abstract = {We present a low cost method to measure and characterize the end-to-end latency when using a touch system (tap latency) or an input device equipped with a physical button. Our method relies on a vibration sensor attached to a finger and a photo-diode to detect the screen response. Both are connected to a micro-controller connected to a host computer using a low-latency USB communication protocol in order to combine software and hardware probes to help determine where the latency comes from. We present the operating principle of our method before investigating the main sources of latency in several systems. We show that most of the latency originates from the display side. Our method can help application designers characterize and troubleshoot latency on a wide range of interactive systems.},
+    booktitle = {Proceedings of the 30th Annual ACM Symposium on User Interface Software and Technology},
+    pages = {29–39},
+    numpages = {11},
+    keywords = {toolkits, measurement tools, measure, latency, lag},
+    location = {Qu\'{e}bec City, QC, Canada},
+    series = {UIST '17}
+}
+```
