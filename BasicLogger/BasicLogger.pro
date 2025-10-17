@@ -13,6 +13,9 @@ macx {
     INCLUDEPATH += /usr/local/include
     LIBS += -L/usr/local/lib
 
+    INCLUDEPATH += /opt/homebrew/include
+    LIBS += -L/opt/homebrew/lib
+
     # Prepare for macport
     INCLUDEPATH += /opt/local/include
     LIBS += -L/opt/local/lib

@@ -21,6 +21,10 @@ windows {
       QMAKE_PKG_CONFIG = /usr/local/bin/pkg-config
       INCLUDEPATH += /usr/local/include
   }
+  exists(/opt/homebrew/bin/pkg-config) {
+      QMAKE_PKG_CONFIG = /opt/homebrew/bin/pkg-config
+      INCLUDEPATH += /opt/homebrew/include
+  }
 
   message("Looking for dependencies using $$QMAKE_PKG_CONFIG")
 
